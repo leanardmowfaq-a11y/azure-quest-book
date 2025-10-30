@@ -22,8 +22,8 @@ const ContactSection = () => {
 
   const contactInfo = [
     { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-    { icon: Mail, label: "Email", value: "info@oceanbooking.com" },
-    { icon: MapPin, label: "Location", value: "Marina Bay, Coastal City" },
+    { icon: Mail, label: "Email", value: "info@rivercruise.com" },
+    { icon: MapPin, label: "Location", value: "River Landing, Riverside Town" },
   ];
 
   return (
@@ -89,7 +89,7 @@ const ContactSection = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-foreground mb-6">Contact Information</h3>
             {contactInfo.map((info, index) => (
-              <Card key={index} className="hover:shadow-ocean transition-shadow duration-300">
+              <Card key={index} className="hover:shadow-river transition-shadow duration-300">
                 <CardContent className="p-6 flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
                     <info.icon className="h-6 w-6 text-secondary" />

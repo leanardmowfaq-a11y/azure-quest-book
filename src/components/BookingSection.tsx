@@ -42,14 +42,14 @@ const BookingSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Book Your Adventure
+            Book Your River Cruise
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to set sail? Fill out the form below and we'll get back to you within 24 hours.
+            Ready for a peaceful river journey? Fill out the form below and we'll get back to you within 24 hours.
           </p>
         </div>
 
-        <Card className="max-w-2xl mx-auto shadow-ocean">
+        <Card className="max-w-2xl mx-auto shadow-river">
           <CardHeader>
             <CardTitle className="text-2xl text-center">Booking Information</CardTitle>
           </CardHeader>
@@ -79,32 +79,16 @@ const BookingSection = () => {
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone Number</Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="+1 (555) 000-0000"
-                    value={formData.phone}
-                    onChange={(e) => handleChange("phone", e.target.value)}
-                    required
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="boat">Select Boat</Label>
-                  <Select value={formData.boat} onValueChange={(value) => handleChange("boat", value)} required>
-                    <SelectTrigger id="boat">
-                      <SelectValue placeholder="Choose a boat" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="luxury">Luxury Cruiser</SelectItem>
-                      <SelectItem value="sailing">Ocean Sailor</SelectItem>
-                      <SelectItem value="fishing">Adventure Fisher</SelectItem>
-                      <SelectItem value="catamaran">Island Explorer</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
+              <div className="space-y-2">
+                <Label htmlFor="phone">Phone Number</Label>
+                <Input
+                  id="phone"
+                  type="tel"
+                  placeholder="+1 (555) 000-0000"
+                  value={formData.phone}
+                  onChange={(e) => handleChange("phone", e.target.value)}
+                  required
+                />
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
@@ -123,13 +107,14 @@ const BookingSection = () => {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="guests">Number of Guests</Label>
+                  <Label htmlFor="guests">Number of Guests (Max 8)</Label>
                   <div className="relative">
                     <Users className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="guests"
                       type="number"
                       min="1"
+                      max="8"
                       placeholder="4"
                       className="pl-10"
                       value={formData.guests}

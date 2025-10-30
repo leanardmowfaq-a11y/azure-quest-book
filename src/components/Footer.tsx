@@ -14,17 +14,17 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Anchor className="h-8 w-8 text-secondary" />
-              <span className="text-2xl font-bold">OceanBooking</span>
+              <span className="text-2xl font-bold">RiverCruise</span>
             </div>
             <p className="text-primary-foreground/80 text-sm">
-              Your premier destination for unforgettable boat experiences and ocean adventures.
+              Your destination for peaceful and scenic river cruise experiences.
             </p>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              {["Home", "About", "Boats", "Gallery"].map((item) => (
+              {["Home", "About", "Boat", "Gallery"].map((item) => (
                 <li key={item}>
                   <button
                     onClick={() => scrollToSection(item.toLowerCase())}
@@ -40,10 +40,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li>Private Charters</li>
-              <li>Group Tours</li>
-              <li>Fishing Trips</li>
-              <li>Sunset Cruises</li>
+              <li>Private Cruises</li>
+              <li>Family Tours</li>
+              <li>Special Events</li>
+              <li>Scenic River Tours</li>
             </ul>
           </div>
 
@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
-          <p>© {currentYear} OceanBooking Co. All rights reserved.</p>
+          <p>© {currentYear} RiverCruise Co. All rights reserved.</p>
         </div>
       </div>
     </footer>

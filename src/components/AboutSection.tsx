@@ -6,22 +6,22 @@ const AboutSection = () => {
     {
       icon: Shield,
       title: "Safety First",
-      description: "All our boats meet the highest safety standards with experienced crew",
+      description: "Our boat meets the highest safety standards with experienced captain",
     },
     {
       icon: Heart,
-      title: "Comfort & Luxury",
-      description: "Premium amenities and comfortable spaces for an unforgettable experience",
+      title: "Comfort & Relaxation",
+      description: "Comfortable seating and peaceful atmosphere for a memorable river journey",
     },
     {
       icon: Users,
-      title: "Professional Crew",
-      description: "Certified captains and staff dedicated to your perfect journey",
+      title: "Perfect for Groups",
+      description: "Accommodates up to 8 passengers, ideal for families and friends",
     },
     {
       icon: Award,
-      title: "Award Winning",
-      description: "Recognized for excellence in maritime tourism and customer service",
+      title: "Scenic Routes",
+      description: "Experience the most beautiful sections of the river with our guided tours",
     },
   ];
 
@@ -33,7 +33,7 @@ const AboutSection = () => {
             Why Choose Us
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We're committed to providing exceptional boat experiences with safety, comfort, and professionalism at the forefront of everything we do.
+            We offer peaceful river cruises with safety, comfort, and professionalism. Perfect for families, friends, and special occasions.
           </p>
         </div>
 

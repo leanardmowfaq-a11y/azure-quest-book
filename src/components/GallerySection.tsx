@@ -1,12 +1,12 @@
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
+import gallery1 from "@/assets/river-gallery-1.jpg";
+import gallery2 from "@/assets/river-gallery-2.jpg";
+import gallery3 from "@/assets/river-gallery-3.jpg";
 
 const GallerySection = () => {
   const images = [
-    { src: gallery1, alt: "Sunset cruise experience" },
-    { src: gallery2, alt: "Aerial view of luxury boats" },
-    { src: gallery3, alt: "Yacht interior details" },
+    { src: gallery1, alt: "River cruise experience" },
+    { src: gallery2, alt: "Scenic river views" },
+    { src: gallery3, alt: "Boat interior" },
   ];
 
   return (
@@ -17,7 +17,7 @@ const GallerySection = () => {
             Gallery
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Take a glimpse into the unforgettable experiences awaiting you on our boats.
+            Take a glimpse into the peaceful river experiences awaiting you on our cruise.
           </p>
         </div>
 

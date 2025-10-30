@@ -25,7 +25,7 @@ const Navbar = () => {
   const navLinks = [
     { label: "Home", id: "hero" },
     { label: "About", id: "about" },
-    { label: "Boats", id: "boats" },
+    { label: "Our Boat", id: "boat" },
     { label: "Gallery", id: "gallery" },
     { label: "Booking", id: "booking" },
     { label: "Contact", id: "contact" },
@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection("hero")}>
             <Anchor className="h-8 w-8 text-secondary" />
             <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              OceanBooking
+              RiverCruise
             </span>
           </div>
 

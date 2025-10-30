@@ -5,17 +5,17 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Sarah Johnson",
-      text: "Absolutely incredible experience! The crew was professional, the boat was pristine, and the views were breathtaking. Will definitely book again!",
+      text: "Beautiful river cruise! The captain was knowledgeable, the boat was comfortable, and the scenery was amazing. Perfect afternoon!",
       rating: 5,
     },
     {
       name: "Michael Chen",
-      text: "Best boat tour we've ever been on. The captain knew all the best spots and the whole experience felt luxurious yet relaxed.",
+      text: "Best river tour we've experienced. Peaceful, relaxing, and the captain shared fascinating local history. Highly recommend!",
       rating: 5,
     },
     {
       name: "Emma Rodriguez",
-      text: "Perfect for our family celebration. Spacious, comfortable, and the staff went above and beyond to make our day special.",
+      text: "Perfect for our family gathering. The boat fit all 8 of us comfortably and we had such a wonderful time on the river.",
       rating: 5,
     },
   ];
@@ -34,7 +34,7 @@ const TestimonialsSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="hover:shadow-ocean transition-shadow duration-300">
+            <Card key={index} className="hover:shadow-river transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
